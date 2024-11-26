@@ -33,7 +33,7 @@ body{
 .container{
     width: 700px;
     background-color: var(--White);
-    padding: 25px;
+    padding: 40px;
     border-radius: 1.25rem;
     margin-bottom: 30px;
 }
@@ -46,7 +46,6 @@ body{
 .v-flow{
     display: flex;
     flex-direction: column;
-    padding: 5px;
 }
 
 .h-flow{
@@ -62,11 +61,11 @@ body{
 .row{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .c-general, .c-support{
-    height: 40px;
+    height: 45px;
     padding-left: 20px;
     border: 0.1rem solid;
     border-radius: 5px;
@@ -83,7 +82,7 @@ label{
 
 input[type='text'], [type='email']{
     width: 100%;
-    height: 40px;
+    height: 45px;
     border: 0.1rem solid;
     border-radius: 5px;
     border-color: var(--Grey);
@@ -92,8 +91,12 @@ input[type='text'], [type='email']{
 
 textarea{
     height: 120px;
+    width: 100%;
 }
 
+.container-agreement{
+    width: fit-content;
+}
 
 #btn-submit{
     margin-top: 30px;
@@ -104,22 +107,37 @@ textarea{
     border: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution{
     font-size: 11px;
     text-align: center;
 }
 .attribution a{ 
     color: hsl(228, 45%, 44%);
+}
+
+
+
+/* Error, hover, succcess */
+input:hover{
+    cursor: pointer;
+    border-color: var(--GreenDark);
+}
+
+.c-general:hover, .c-support:hover, .container-agreement:hover{
+    cursor: pointer;
+}
+
+.cgeneral:has(input[type='radio']:checked){
+
+    background-color: black;
+    border-color: var(--GreenDark);
+}
+
+#btn-submit:hover{
+    cursor: pointer;
+    background-color: var(--GreyDark);
+}
+
+input:focus{
+    border-color: var(--GreenDark);
 }
