@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --Green: hsl(148, 38%, 91%);
+    --GreenDark: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(186, 15%, 59%);
+    --GreyDark: hsl(187, 24%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--Green);
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra{
+    margin-left: 5px;
+    color: var(--GreenDark);
+}
+
+.container{
+    width: 700px;
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 1.25rem;
+    margin-bottom: 30px;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.v-flow{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.h-flow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.half{
+    width: 50%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.c-general, .c-support{
+    height: 40px;
+    padding-left: 20px;
+    border: 0.1rem solid;
+    border-radius: 5px;
+    border-color: var(--Grey);
+}
+
+.label-gap, .query-header{
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 15px;
+}
+
+input[type='text'], [type='email']{
+    width: 100%;
+    height: 40px;
+    border: 0.1rem solid;
+    border-radius: 5px;
+    border-color: var(--Grey);
+    padding: 5px;
+}
+
+textarea{
+    height: 120px;
+}
+
+
+#btn-submit{
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 18px 0;
+    background-color: var(--GreenDark);
+    color: var(--White);
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%);
+}
