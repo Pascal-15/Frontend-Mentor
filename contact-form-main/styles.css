@@ -23,11 +23,37 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--GreyDark);
 }
 
 .extra{
     margin-left: 5px;
     color: var(--GreenDark);
+}
+
+.error{
+    font-size: 13px;
+    margin-top: 10px;
+    color: var(--Red);
+}
+
+.c-success{
+    visibility: hidden;
+    background-color: var(--GreyDark);
+    padding: 20px;
+    color: var(--White);
+    text-align: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.c-successHeader{
+    font-weight: 700;
+}
+
+.c-successBody{
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .container{
@@ -89,6 +115,11 @@ input[type='text'], [type='email']{
     padding: 5px;
 }
 
+input[type='radio'] {
+    accent-color: var(--GreenDark);
+    scale: 1.2;
+}
+
 textarea{
     height: 120px;
     width: 100%;
@@ -116,21 +147,14 @@ textarea{
 }
 
 
-
 /* Error, hover, succcess */
 input:hover{
     cursor: pointer;
     border-color: var(--GreenDark);
 }
 
-.c-general:hover, .c-support:hover, .container-agreement:hover{
+.c-general:hover, .c-support:hover, .lAgreement:hover{
     cursor: pointer;
-}
-
-.cgeneral:has(input[type='radio']:checked){
-
-    background-color: black;
-    border-color: var(--GreenDark);
 }
 
 #btn-submit:hover{

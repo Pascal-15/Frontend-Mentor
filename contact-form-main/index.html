@@ -10,8 +10,18 @@
 
 </head>
 <body>
+  <div class="c-success v-flow" id="cSuccess">
+    <div class="c-successHeader row">
+      <img src="assets/images/icon-success-check.svg" alt="">
+      <span>Message Sent!</span>
+    </div>
+    <div class="c-successBody">
+      <span>Thanks for completing the form. We`ll be in touch soon!</span>
+    </div>
+  </div>
+
   <div class="container">
-    <form action="" method="post">
+    <form action="" method="post" id="form">
 
       <h1>Contact Us</h1>
 
@@ -19,16 +29,19 @@
         <div class="c-fname v-flow half">
           <label for="fname" class="label-gap">First Name<span class="extra">*</span></label>
           <input type="text" id="fname" required>
+          <span class="error" id="errorFirstName">This field is required</span>
         </div>
         <div class="c-lname v-flow half">
           <label for="lname" class="label-gap">Last Name<span class="extra">*</span></label>
           <input type="text" id="lname" required>
+          <span class="error" id="errorLastName">This field is required</span>
         </div>
       </div>
 
       <div class="container-email v-flow">
         <label for="email" class="label-gap">Email Address<span class="extra">*</span></label>
         <input type="email" id="email" required>
+        <span class="error" id="errorEmail">Please enter a valid email address</span>
       </div>
 
       <div class="container-query v-flow">
@@ -36,25 +49,30 @@
           <label>Query Type<span class="extra">*</span></label>
         </div>
         <div class="query-inner h-flow">
-          <div class="c-general half row">
+          <div class="c-general half row" id="cGeneral">
             <input type="radio" id="general" name="query" required>
             <label for="general">General Enquiry</label>
           </div>
-          <div class="c-support half row">
+          <div class="c-support half row" id="cSupport">
             <input type="radio" id="support" name="query" required>
             <label for="support">Support Request</label>
           </div>
         </div>
+        <span class="error" id="errorQuery">Please select a query type</span>
       </div>
 
       <div class="container-message v-flow">
         <label for="message" class="label-gap">Message<span class="extra">*</span></label>
         <textarea name="message" id="message"></textarea>
+        <span class="error" id="errorMessage">This field is required</span>
       </div>
-
-      <div class="container-agreement row">
-        <input type="checkbox" id="agreement" class="agreement" required>
-        <label for="agreement">I consent to being contacted by the team<span class="extra">*</span></label>
+      
+      <div class="v-flow">
+        <div class="container-agreement row">
+          <input type="checkbox" id="agreement" class="agreement" required>
+          <label for="agreement" class="lAgreement">I consent to being contacted by the team<span class="extra">*</span></label>
+        </div>
+        <span class="error" id="errorCheck">To submit this form, please consent to being contacted</span>
       </div>
 
       <input type="submit" value="Submit" id="btn-submit">
