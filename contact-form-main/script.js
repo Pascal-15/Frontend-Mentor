@@ -8,12 +8,12 @@ const btnSubmit = document.getElementById('btn-submit');
 const cSuccess =  document.getElementById('cSuccess');
 
 //error messages
-const errorFirstName = document.getElementsByID('errorFirstName');
-const errorLastName = document.getElementsByID('rrorLastName');
-const errorEmail = document.getElementsByID('errorEmail');
-const errorQuery = document.getElementsByID('errorQuery');
-const errorMessage = document.getElementsByID('errorMessage');
-const errorCheck = document.getElementsByID('errorCheck');
+const errorFirstName = document.getElementById('errorFirstName');
+const errorLastName = document.getElementById('rrorLastName');
+const errorEmail = document.getElementById('errorEmail');
+const errorQuery = document.getElementById('errorQuery');
+const errorMessage = document.getElementById('errorMessage');
+const errorCheck = document.getElementById('errorCheck');
 
 
 //get custom colors from stylesheet
