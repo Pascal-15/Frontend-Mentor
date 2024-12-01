@@ -76,25 +76,27 @@ hr {
 
 img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50px;
+    padding: 40px;
 }
 
 .card {
     margin-top: 110px;
     background-color: var(--White);
     border-radius: 25px;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
     max-width: 720px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.0125);
 }
 
-
-.cardHeader {
-    width: 100%;
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
 }
 
 .preperation {
@@ -157,4 +159,44 @@ td:last-child {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+/* Responsive Desing */
+
+@media (max-width: 720px) {
+
+    .card {
+        margin-top: 0px;
+        border-radius: 0px;
+    }
+
+    img {
+        border-radius: 0px;
+        padding: 0;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .card {
+        margin-top: 0px;
+        font-size: 15px;
+        border-radius: 0;
+    }
+
+    img {
+        border-radius: 0px;
+        border: none;
+        padding: 0;
+    }
+
+    .attribution {
+        display: none;
+    }
 }
