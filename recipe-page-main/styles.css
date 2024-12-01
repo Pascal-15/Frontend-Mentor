@@ -53,8 +53,12 @@ ul, ol, table {
     margin-top: 25px;
 }
 
+ul, ol {
+    padding-left: 25px;
+}
+
 li { 
-    margin-left: 25px;
+    padding-left: 10px;
     margin-top: 15px;
 }
 
