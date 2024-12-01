@@ -19,33 +19,137 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--Stone100);
     display: flex;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--Stone600);
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    gap: 30px;
+}
+
+h1 {
+    color: var(--Stone900);
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--Brown800);
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--Rose800);
+}
+
+h1, h2 {
+    font-family: 'Young Serif', sans-serif;
+}
+
+ul, ol, table {
+    margin-top: 25px;
+}
+
+li { 
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+li::marker {
+    color: var(--Brown800);
+    font-weight: 600;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    width: 100%;
+    background-color: var(--Stone150);
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
 }
 
 .card {
+    margin-top: 110px;
     background-color: var(--White);
-    border-radius: 20px;
-    height: 600px;
-    width: 300px;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    max-width: 720px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.0125);
 }
 
 
+.cardHeader {
+    width: 100%;
+}
 
+.preperation {
+    width: 100%;
+    background-color: var(--Rose50);
+    border-radius: 10px;
+    padding: 25px;
+}
 
+.preperation li::marker {
+    color: var(--Rose800);
+}
 
+.ingrediants {
+    width: 100%;
+}
 
+.ingrediants li {
+    list-style: square;
+}
 
+.instructions {
+    width: 100%;
+}
 
+.nutrition {
+    width: 100%;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid var(--Stone150);
+}
+
+tr:last-child {
+    border: none;
+}
+
+td {
+    padding: 10px;
+}
+
+td:last-child {
+    color: var(--Brown800);
+    font-weight: 600;
+}
+
+.tableInfo {
+    color: var(--Brown800);
+    font-weight: 600;
+}
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    margin-bottom: 110px;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
