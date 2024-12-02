@@ -3,6 +3,10 @@
 :root {
     --DesaturatedRed: hsl(0, 36%, 70%);
     --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+
+    --Linear135degfrom: hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --Linear135degfrom2: hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 }
 
 
@@ -12,8 +16,97 @@
     box-sizing: border-box;
 }
 body {
+    min-height: 100vh;
+    width: 100%;
     font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
 }
+
+
+.heroContent {
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15%;
+}
+
+header {
+    margin-top: 10%;
+}
+
+header img {
+    width: 25%;
+}
+
+.contentSection {
+    margin-top: 20%;
+}
+
+.contentSection h1 {
+    line-height: 125%;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    font-weight: 600;
+    color: var(--DarkGrayishRed);
+}
+
+.contentSection h1 span {
+    font-weight: 300;
+    color: var(--DesaturatedRed);
+}
+
+.contentSection p {
+    margin-top: 5%;
+    color: var(--DesaturatedRed);
+    font-size: 26px;
+    line-height: 200%;
+}
+
+.inputSection {
+    margin-top: 8%;
+    width: 100%;
+    gap: 0px;
+    border: 1px solid;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.inputSection input {
+    border-radius: 30px;
+    border: none;
+    height: 60px;
+    text-align: start;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.inputSection button {
+    height: 60px;
+    width: 20%;
+    border-radius: 30px;
+    border: none;
+}
+
+footer {
+    margin-top: 28%;
+}
+
+
+
+.heroImage {
+    width: fit-content;
+}
+
+.heroImage img {
+    height: 100vh;
+}
+
 
 
 
