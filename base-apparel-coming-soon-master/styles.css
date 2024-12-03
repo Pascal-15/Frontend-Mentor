@@ -5,8 +5,8 @@
     --SoftRed: hsl(0, 93%, 68%);
     --DarkGrayishRed: hsl(0, 6%, 24%);
 
-    --Linear135degfrom: hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-    --Linear135degfrom2: hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+    --Linear1: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    --Linear2: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 
@@ -71,26 +71,54 @@ header img {
     margin-top: 8%;
     width: 100%;
     gap: 0px;
-    border: 1px solid;
+    border: 1px solid var(--DesaturatedRed);
     border-radius: 30px;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .inputSection input {
     border-radius: 30px;
     border: none;
-    height: 60px;
+    height: 65px;
     text-align: start;
     padding: 10px 20px;
-    width: 80%;
+    font-size: 20px;
+    width: 100%;
+}
+
+.inputSection input::placeholder {
+    color: var(--DesaturatedRed);
+    letter-spacing: 2px;
+    padding-left: 3%;
 }
 
 .inputSection button {
-    height: 60px;
-    width: 20%;
-    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 65px;
+    width: 22%;
+    border-radius: 28px;
     border: none;
+    background: var(--Linear1);
+    box-shadow: 0px 0px 25px var(--DesaturatedRed);
+}
+
+.inputSection .errorLogo {
+    display: none;
+    position: absolute;
+    right: 25%;
+    top: 0;
+    height: 65px;
+    padding: 8px;
+}
+
+.inputSection button img {
+    width: 16%;
+}
+
+.inputSection button:hover {
+    cursor: pointer;
 }
 
 footer {
