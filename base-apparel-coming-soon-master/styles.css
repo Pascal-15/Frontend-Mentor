@@ -102,19 +102,11 @@ header img {
     border-radius: 28px;
     border: none;
     background: var(--Linear1);
-    box-shadow: 0px 0px 25px var(--DesaturatedRed);
+    box-shadow: 0px 0px 200px 10px var(--DesaturatedRed);
 }
 
-.inputSection button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 65px;
-    width: 22%;
-    border-radius: 28px;
-    border: none;
-    background: var(--Linear1);
-    box-shadow: 0px 0px 25px var(--DesaturatedRed);
+.btnSubmit img {
+    scale: 1.65;
 }
 
 .inputSection .errorLogo {
@@ -126,11 +118,7 @@ header img {
     padding: 8px;
 }
 
-.inputSection button img {
-    width: 16%;
-}
-
-.inputSection button:hover {
+.btnSubmit:hover {
     cursor: pointer;
 }
 
@@ -145,8 +133,6 @@ footer {
     margin-top: 28%;
 }
 
-
-
 .heroImage {
     width: fit-content;
 }
@@ -154,13 +140,6 @@ footer {
 .heroImage img {
     height: 100vh;
 }
-
-
-
-
-
-
-
 
 .attribution {
     font-size: 11px;

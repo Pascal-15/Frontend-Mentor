@@ -8,7 +8,6 @@ form.addEventListener('submit', (e) => {
     return validate(e);
 });
 
-
 function validate(e) {
     if (form.email.value == '') {
         console.log('Email fehlt...');
