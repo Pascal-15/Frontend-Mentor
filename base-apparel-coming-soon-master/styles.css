@@ -84,6 +84,7 @@ header img {
     padding: 10px 20px;
     font-size: 20px;
     width: 100%;
+    outline: none;
 }
 
 .inputSection input::placeholder {
@@ -131,6 +132,13 @@ header img {
 
 .inputSection button:hover {
     cursor: pointer;
+}
+
+#errorMessage {
+    display: none;
+    margin-top: 2%;
+    padding-left: 6%;
+    color: red;
 }
 
 footer {
