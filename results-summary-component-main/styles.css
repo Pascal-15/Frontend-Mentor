@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    --LightSlateBlue: (background): hsl(252, 100%, 67%);
+    --LightRoyalBlue: (background): hsl(241, 81%, 54%);
+
+    --VioletBlue: (circle): hsla(256, 72%, 46%, 1);
+    --PersianBlue: (circle): hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-size: 18px;
+}
+
+.container {
+    background-color: aquamarine;
+    border-radius: 1.25rem;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
